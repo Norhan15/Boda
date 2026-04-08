@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda - Johan y Paola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation-card">
+        <div class="header-decoration"></div>
+        
+        <!-- Bordes decorativos con SVG (ahora referenciados correctamente) -->
+        <img src="svg/borde-largo.png" alt="Borde floral superior" class="side-floral-border" style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 450px; height: auto; opacity: 0.3; z-index: 0; pointer-events: none;">
+        
+        <div class="floral-decoration floral-2">
+            <i class="fas fa-spa leaf-icon"></i>
+        </div>
+        
+       <div class="floral-edge floral-edge-left"></div>
+        <div class="floral-edge floral-edge-right"></div>
+
+        <div class="card-content">
+            <p class="greeting">El matrimonio es una promesa de amor, constancia y fidelidad, que se renueva todos los días de su vida. Para que el matrimonio dure, hay que enamorarse todos los días. Muchas, muchas veces y siempre de la misma persona.</p>
+            
+            <h1 class="title">Nuestra Boda</h1>
+            
+            <h2 class="names">Johan y Paola</h2>
+            
+            <!-- Temporizador -->
+            <div class="countdown-container">
+                <div class="countdown-title">Falta para nuestro gran día</div>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Días</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="title">Sábado 30 de Mayo</h1>
+            
+            <p class="greeting">Invitarlos a ser parte de este día tan especial para nosotros</p>
+            
+            <!-- Sección de padres -->
+            <div class="parents-section">
+                <h2 class="section-title">Nuestros Padres</h2>
+                
+                <div class="parents-container">
+                    <div class="parent-box">
+                        <h3 class="parent-title">Novio</h3>
+                        <div class="parent-name">Prof. Neftali Serrano Albores</div>
+                        <div class="parent-name">Sra. Maria Teresa Montejo Espinosa</div>
+                    </div>
+                    
+                    <div class="parent-box">
+                        <h3 class="parent-title">Novia</h3>
+                        <div class="parent-name">Sr. Inocente Pérez Toalá</div>
+                        <div class="parent-name">Sra. Maria Celia Pérez Toalá</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sección de padrinos -->
+            <div class="godparents-section">
+                <h2 class="section-title">Nuestros Padrinos</h2>
+                
+                <div class="godparents-container">
+                    <!-- Arras -->
+                    <div class="godparent-type">
+                        <div class="godparent-header">
+                            <div class="godparent-icon">
+                                <img src="svg/arras.png" alt="Arras">
+                            </div>
+                            <h3 class="godparent-title">Arras</h3>
+                        </div>
+                        <div class="godparent-list">
+                            <div class="godparent-name">Sr. Oscar Andres Pérez Toalá</div>
+                            <div class="godparent-name">Sra. Guadalupe Nango Pérez</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lazo -->
+                    <div class="godparent-type">
+                        <div class="godparent-header">
+                           <div class="godparent-icon">
+                                <img src="svg/lazo.png" alt="Lazo">
+                            </div>
+                            <h3 class="godparent-title">Lazo</h3>
+                        </div>
+                        <div class="godparent-list">
+                            <div class="godparent-name">Sr. Adelin Pérez Toalá</div>
+                            <div class="godparent-name">Sra. Olga Lidia Escobar Pérez</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Anillos -->
+                    <div class="godparent-type">
+                        <div class="godparent-header">
+                            <div class="godparent-icon">
+                                <img src="svg/wedding.png" alt="Anillos">
+                            </div>
+                            <h3 class="godparent-title">Anillos</h3>
+                        </div>
+                        <div class="godparent-list">
+                            <div class="godparent-name">Sr. Huberto Pérez Hernández</div>
+                            <div class="godparent-name">Lic. Dalia Guadalupe Díaz López</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Velación -->
+                    <div class="godparent-type">
+                        <div class="godparent-header">
+                           <div class="godparent-icon">
+                                <img src="svg/candles.png" alt="Velación">
+                            </div>
+                            <h3 class="godparent-title">Velación</h3>
+                        </div>
+                        <div class="godparent-list">
+                            <div class="godparent-name">Sr. Vicente Pérez Toalá</div>
+                            <div class="godparent-name">Sra. María del Rosario Pérez Gómez</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+                <!-- Bautizo -->
+<p class="greeting">Y así mismo al bautizo de nuestra hija</p>
+
+<!-- Círculo dorado para imagen -->
+<div class="image-circle">
+    <i class="fas fa-baby image-circle-placeholder"></i>
+    <img src="svg/Paulette.jpeg" alt="Paulette">
+</div>
+
+<h2 class="names">Paulette Serrano Pérez</h2>
+
+<!-- Padrinos de bautizo -->
+<div class="godparents-section">
+    <h2 class="section-title">Padrinos de Bautizo</h2>
+    
+    <div class="godparents-container">
+        <!-- Padrinos Principales -->
+        <div class="godparent-type">
+            <div class="godparent-header">
+                <div class="godparent-icon">
+                    <i class="fas fa-hands"></i>
+                </div>
+                <h3 class="godparent-title">Padrinos</h3>
+            </div>
+            <div class="godparent-list">
+                <div class="godparent-name">Joven Osmar Daniel Pérez Pérez</div>
+            </div>
+        </div>
+        
+        <!-- Padrinos de Evangelio -->
+        <div class="godparent-type">
+            <div class="godparent-header">
+                <div class="godparent-icon">
+                    <i class="fas fa-book-bible"></i>
+                </div>
+                <h3 class="godparent-title">Padrinos de Evangelio</h3>
+            </div>
+            
+            <div class="godparent-list" style="margin-bottom: 10px;">
+                <div class="godparent-name">Sra. Marily Pérez Pérez</div>
+                <div class="godparent-name">Ing. Jonathan Pérez Pozo</div>
+            </div>
+
+            <div class="godparent-list" style="margin-bottom: 10px;">
+                <div class="godparent-name">Lic. Maria Fernanda Pérez Escobar</div>
+                <div class="godparent-name">Sr. Jonathan Cundapi Gallegos</div>
+            </div>
+
+            <div class="godparent-list" style="margin-bottom: 10px;" >
+                <div class="godparent-name">Joven Marco Antonio Dominguez Pérez</div>
+            </div>
+
+            <div class="godparent-list" style="margin-bottom: 10px;">
+                <div class="godparent-name">Ing. Osvaldo Vergara Montejo</div>
+                <div class="godparent-name">Sra. Karla Janeth Júarez Torres</div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+            <!-- Sección de ubicación -->
+            <div class="location-container">
+                <div class="location-box">
+                    <div class="location-title">
+                        <i class="fas fa-church"></i>
+                        Ceremonia Religiosa
+                    </div>
+                    <div class="location-detail"><strong>Iglesia:</strong> San Francisco de Asís</div>
+                    <div class="location-detail"><strong>Hora:</strong> 01:00 pm</div>
+                    <div class="location-detail"><strong>Dirección:</strong> Calle Primera Pte. Sur, San Francisco, Tuxtla Gutiérrez, Chis.</div>
+                </div>
+                
+                <div class="location-box">
+                    <div class="location-title">
+                        <i class="fas fa-glass-cheers"></i>
+                        Recepción y Fiesta
+                    </div>
+                    <div class="location-detail"><strong>Salón:</strong> Quinta "Violeta"</div>
+                    <div class="location-detail"><strong>Hora:</strong> 04:30 pm</div>
+                    <div class="location-detail"><strong>Dirección:</strong> Entre 1ª Sur Oriente y Av. Central </div>
+                </div>
+            </div>
+            
+    <!-- Cierre elegante -->
+    <div class="closing">
+        <div class="floral-divider">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-feather-alt"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="closing-message">
+            ¡Te esperamos!
+        </div>
+        <div class="closing-names">
+            Johan & Paola
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
